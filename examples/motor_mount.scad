@@ -28,8 +28,8 @@ module z_bottom_holes(){
     translate([-1,49,15]) rotate([0,90,0]) cylinder(h = 50, r=2.8, $fn=30);
 
     // Frame mounting screw head holes
-    translate([3,-9,15]) rotate([0,90,0]) cylinder(h = 20, r=4.2, $fn=30);
-    translate([3,49,15]) rotate([0,90,0]) cylinder(h = 20, r=4.2, $fn=30);
+    translate([3,-9,15]) rotate([0,90,0]) cylinder(h = 20, r=4.5, $fn=30);
+    translate([3,49,15]) rotate([0,90,0]) cylinder(h = 20, r=4.5, $fn=30);
 
     // Frame mounting screw holes
     translate([-10,4.5,-1]) cylinder(h = 50, r=2.8, $fn=30);
