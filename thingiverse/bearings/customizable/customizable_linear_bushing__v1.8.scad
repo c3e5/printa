@@ -33,16 +33,16 @@
 /* [Bushing Settings] */
 
 // Equals dr in technical diagrams. Use the outer diameter of the rod + tolerance value of your printer. Do some test prints before print a whole set of bushings. Best way in my case is to choose the bushing where can push it in with some effort on the rod and slide it by hand without any tools. Then slide it back and forth along the rod, until the bushing has the expected behavior. I suggest you not to use any drill or heat. The sliding of the bushing generates enough heat from its friction against the rod. Standard values: 6.00 for LM6(L)UU, 8.00 (default 8.15) for LM8(L)UU, 10.00 for LM10(L)UU, 12.00 for LM12(L)UU, 16.00 for LM16UU, ...
-inner_diameter_in_millimeter = 8.4;
+inner_diameter_in_millimeter = 8.15;
 
 // Equals D in technical diagrams. Use the inner diameter of housing where the bushing sits + tolerance value of your printer. Depends on the filament you use and the total wall thickness of the bushings, the bushing shouldn't fit to tight in the housing. Standard values: 12.0 for LM6(L)UU, 15.0 (default) for LM8(L)UU, 19.0 for LM10(L)UU, 21.0 for LM12(L)UU, 28.0 for LM16UU, ...
-outer_diameter_in_millimeter = 14.8; 
+outer_diameter_in_millimeter = 15; 
 
 // Equals L in technical diagrams. Standard values: 19.0 for LM6UU, 24.0 for LM8UU, 29.0 for LM10UU, 30.0 for LM12UU, 35.0 for LM6LUU, 37.0 for LM16UU, 45.0 for LM8LUU, 55.0 for LM10LUU, 57.0 for LM12LUU, ...
-bushing_length_in_millimeter = 45.0;
+bushing_length_in_millimeter = 24.0;
 
 // Use a value to get straight primeters without any zigzag between the outer and inner perimeter. I use the value of 0.48 for 0.4 nozzle. This is the auto extrusion width of 0.48 of simplify3d. More information about this in the description of this design on thingiverse.
-extrusion_width_in_millimeter = 0.4; 
+extrusion_width_in_millimeter = 0.3; 
 
 // Use even numbers. E.g. 4 for LM8(L)UU. Don't forget to set the perimeter number in your Slicer! 
 number_of_perimeters = 4; //[2:2:10]

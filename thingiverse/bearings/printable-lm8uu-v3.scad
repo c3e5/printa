@@ -21,7 +21,7 @@ layer_height = 0.2;
 // SLIC3R lists extrusion width in the header of exported gcode files as "single wall width"
 //        it also allows you to specify as extrusion_width = layer_height * extrusion_width_ratio if you want to force it
 
-extrusion_width = 0.4;
+extrusion_width = 0.3;
 
 // this should also come from your slicing program, however it's usually an internal value. Most use approximately 0.15
 
