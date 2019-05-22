@@ -6,10 +6,10 @@
 //
 
 // user parameters
-N = 10; // number of pyramid holes in a floor
-radius = 30; // external radius
-inner_radius = 21; // internal radius
-num_floors = 4; // number of pyramid floors
+N = 11; // number of pyramid holes in a floor
+radius = 45; // external radius
+inner_radius = 37; // internal radius
+num_floors = 7; // number of pyramid floors
 bottom_width = 3; // width of the bottom layer
 
 // do not edit below this line
