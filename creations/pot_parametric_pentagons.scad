@@ -1,7 +1,7 @@
-outer_radius = 40;
+outer_radius = 60;
 height = outer_radius;
 polygon_degree = 5;
-thickness = 7;
+thickness = 8;
 
 module polygon_extrusion (height, degree, radius)
 {
@@ -30,4 +30,8 @@ difference () {
     linear_extrude (thickness)
       circle (outer_radius * 2);
   }
+  translate([0,0,height - 2])
+    linear_extrude (2.2, scale=1.07)
+      rotate ([0,0,180/polygon_degree])
+        circle (outer_radius - thickness, $fn=polygon_degree);
 }
