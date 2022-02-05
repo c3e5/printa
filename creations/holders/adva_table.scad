@@ -13,7 +13,7 @@ difference() {
   translate([10.5,17,0]) screw_hole();
   translate([10.5,-17,0]) screw_hole();
   translate([-17,0,-1]) screw_hole();
-  translate([0,0,-1]) linear_extrude(9) circle(7.8, $fn=6);
-  translate([0,0,-1]) linear_extrude(3) circle(8.8);
-  translate([0,0,-1]) linear_extrude(20) circle(4.6);
+  translate([0,0,-1.5]) rotate([0,10,0]) linear_extrude(10.5) circle(7.8, $fn=6);
+  translate([0,0,-1.5]) rotate([0,10,0]) linear_extrude(4.5) circle(8.8);
+  translate([0,0,-1.5]) rotate([0,10,0]) linear_extrude(20) circle(4.6);
 }
