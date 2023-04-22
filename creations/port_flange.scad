@@ -1,12 +1,13 @@
-tube_dia_int = 47;
-tube_dia_ext = 50;
+tolerance = 0.3;
+tube_dia_int = 46.5;
+tube_dia_ext = 50.5;
 tube_conn_h = 10;
-flange_h = 10;
-thickness = 5;
+flange_h = 5;
+thickness = 4;
 curve_radius = 10;
-margins_w = 10;
-margins_h = 5;
-num_holes = 4;
+margins_w = 7;
+margins_h = 4;
+num_holes = 0;
 hole_dia_int = 4;
 hole_dia_ext = 6;
 
