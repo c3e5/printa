@@ -1,11 +1,10 @@
-tolerance = 0.3;
 tube_dia_int = 46.5;
 tube_dia_ext = 50.5;
-tube_conn_h = 10;
+tube_conn_h = 8;
 flange_h = 5;
-thickness = 4;
+thickness = 6;
 curve_radius = 10;
-margins_w = 7;
+margins_w = 6;
 margins_h = 4;
 num_holes = 0;
 hole_dia_int = 4;
@@ -51,6 +50,7 @@ difference() {
       [tube_dia_int/2 + curve_radius, margins_h],
     ]);
   
+  if(num_holes > 0) {
   for (i = [0 : num_holes]) {
     rotate([0, 0, i*360/num_holes])
     translate([holes_displacement, 0, 0])
@@ -60,5 +60,6 @@ difference() {
         linear_extrude(1.5)
           circle(hole_dia_ext/2 + 0.3);
       }
+  }
   }
 }

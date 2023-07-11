@@ -1,13 +1,10 @@
-tube_dia_int = 47;
-tube_dia_ext = 50;
-flange_h = 5;
-thickness = 3;
-curve_radius = 6;
+tube_dia_int = 46.5;
+tube_dia_ext = 50.5;
+flange_h = 4;
+thickness = 2;
+curve_radius = 5.5;
 margins_w = 1;
 margins_h = 3;
-num_holes = 0;
-hole_dia_int = 4;
-hole_dia_ext = 6;
 
 $fn=100;
 
@@ -40,23 +37,10 @@ rotate_extrude()
   }
 
 // low part: margins
-difference() {
-  rotate_extrude()
-    polygon([
-      [tube_dia_int/2 + curve_radius, 0],
-      [tube_dia_int/2 + curve_radius + margins_w, 0],
-      [tube_dia_int/2 + curve_radius + margins_w, margins_h],
-      [tube_dia_int/2 + curve_radius, margins_h],
-    ]);
-  
-  for (i = [0 : num_holes]) {
-    rotate([0, 0, i*360/num_holes])
-    translate([holes_displacement, 0, 0])
-      union() {
-        linear_extrude(margins_h)
-          circle(hole_dia_int/2 + 0.3);
-        linear_extrude(1.5)
-          circle(hole_dia_ext/2 + 0.3);
-      }
-  }
-}
+rotate_extrude()
+polygon([
+  [tube_dia_int/2 + curve_radius, 0],
+  [tube_dia_int/2 + curve_radius + margins_w, 0],
+  [tube_dia_int/2 + curve_radius + margins_w, margins_h],
+  [tube_dia_int/2 + curve_radius, margins_h],
+]);
